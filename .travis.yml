@@ -1,0 +1,18 @@
+language: node_js
+
+node_js:
+  - "node"
+  - "9"
+
+install:
+  - cd server
+  - yarn install
+
+test:
+  - cd server
+  - yarn test
+
+cache:
+  yarn: true
+  directories:
+    - "node_modules"
