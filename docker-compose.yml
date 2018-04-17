@@ -1,0 +1,32 @@
+version: '3'
+services:
+  api:
+    container_name: api
+    build: ./server
+    volumes:
+      - ./server:/usr/src/app
+    ports:
+      - "3000:3000"
+    environment:
+      DB_HOST: db
+      DB_USER: root
+      DB_PASSWORD: secret
+      DB_NAME: news-server
+    depends_on:
+      - db
+  db:
+    container_name: db
+    image: mysql
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: news-server
+  db-tests:
+    container_name: db-tests
+    image: mysql
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: news-server-tests

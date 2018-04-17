@@ -8,18 +8,28 @@
   "license": "LicenseRef-LICENSE",
   "private": true,
   "scripts": {
-    "start": "node index.js",
-    "test": "cross-env NODE_ENV=test jest"
+    "start": "nodemon index.js",
+    "test": "cross-env NODE_ENV=test jest",
+    "db:migrate": "node ./scripts/migrate",
+    "db:seed": "node ./scripts/migrate"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
+    "dotenv": "^5.0.1",
     "express": "~4.16.0",
-    "morgan": "~1.9.0"
+    "morgan": "~1.9.0",
+    "mysql2": "^1.5.3",
+    "sequelize": "^4.37.6"
   },
   "devDependencies": {
     "cross-env": "^5.1.4",
     "jest": "^22.4.3",
+    "nodemon": "^1.17.3",
     "supertest": "^3.0.0"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "./setupTestFramework.js",
+    "testEnvironment": "node"
   }
 }
