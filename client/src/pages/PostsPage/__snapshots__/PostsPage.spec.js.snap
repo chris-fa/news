@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PostsPage /> renders a <PostList> 1`] = `
+<div
+  className="container"
+>
+  <h1
+    className="title is-1"
+  >
+    Posts
+  </h1>
+  <PostList
+    posts={
+      Array [
+        Object {},
+      ]
+    }
+  />
+</div>
+`;

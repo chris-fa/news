@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PostList /> renders posts 1`] = `
+<div>
+  <div
+    className="box"
+    key="1"
+  >
+    <h4
+      className="title is-4"
+    >
+      foo
+    </h4>
+    <h6
+      className="subtitle is-6"
+    >
+      By John Doe at
+                4/18/2018
+    </h6>
+    <figure
+      className="image is-4by3"
+    >
+      <img
+        alt="foo"
+      />
+    </figure>
+    <p>
+      bar
+    </p>
+  </div>
+  <div
+    className="box"
+    key="2"
+  >
+    <h4
+      className="title is-4"
+    >
+      foo 2
+    </h4>
+    <h6
+      className="subtitle is-6"
+    >
+      By Jane Doe at
+                4/19/2018
+    </h6>
+    <figure
+      className="image is-4by3"
+    >
+      <img
+        alt="foo 2"
+      />
+    </figure>
+    <p>
+      bar 2
+    </p>
+  </div>
+</div>
+`;
