@@ -1,4 +1,8 @@
-#
+# news-client
+
+### Architecture
+
+use ducks, redux-actions, FSA compliant
 
 ### Testing
 
